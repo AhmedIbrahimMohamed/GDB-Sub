@@ -1,0 +1,35 @@
+* Merge source code of to final version
+  - "What  was done.docx"
+
+* see design.docx document and discuss some issues in it 
+
+  
+*complete  instruction decoding functions
+- rest of instruction sub classes --> ok  almost
+- Auxilary functions like  shift_Shift_c() 
+	-- need revise corresponding Aux functions from ARM and assure its correctness 
+
+*complete s case in process packet  
+ -handle odd cases in s command : undefined instruction or error in inserting breakpoint 
+
+*complete GDB_Exception handling for all types of exceptions
+
+
+*handle : saved the "Switched from" Task ID/Prio
+-revise that pointers to addresses are incremented/decremented correctly
+-commenting all code in uniform manner
+
+
+
+*implement D,K commands
+- i think  it is a Big addition
+
+* need discuss the TODOs in source code for odd cases
+
+
+===================================
+New TODO-list:
+
+1- map exceptions numbers to signal numbers
+- in gdb exception handler 
+- in case s,c in process_packet
